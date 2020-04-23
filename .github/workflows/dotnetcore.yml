@@ -17,11 +17,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
-    - name: Enter Source Folder
-      run: cd src/
     - name: Install dependencies
-      run: dotnet restore AutoInject.sln
+      run: dotnet restore src/AutoInject.sln
     - name: Build
-      run: dotnet build AutoInject.sln --configuration Release --no-restore
+      run: dotnet build src/AutoInject.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet test AutoInject.sln --no-restore --verbosity normal
+      run: dotnet test src/AutoInject.sln --no-restore --verbosity normal
