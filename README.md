@@ -1,4 +1,6 @@
 # AutoInject
+![.NET Core](https://github.com/mcbride-clint/AutoInject/workflows/.NET%20Core/badge.svg)
+
 .Net Core Library to Mark Classes as Injectable and Add them to your Service Collection
 
 ## Usage
